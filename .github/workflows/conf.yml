@@ -1,4 +1,4 @@
-name: 酷Q天气推送
+name: 酷Q爱奇艺签到抽奖
 on:
   push:
     branches: [master]
