@@ -23,7 +23,7 @@ jobs:
           python-version: 3.7
       - name: 安装依赖并替换环境变量
         env:
-          SPKEY: ${{ secrets.SPKEY }}
+          SPKEY: ${{ secrets.SKEY }}
           P00001: ${{ secrets.P00001 }}
           P00003: ${{ secrets.P00003 }}
         run: |
