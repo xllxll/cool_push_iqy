@@ -205,9 +205,12 @@ def sendMsg(key, content):
 
 def main():
     import os
+    # P00001 = ""
     P00001 = os.environ['P00001']
+    # P00003 = ""
     P00003 = os.environ['P00003']
-    skey =os.environ['SKEY']
+    # skey = ""
+    skey = os.environ['SKEY']
 
     # 签到
     obj = IQY(P00001, P00003)
@@ -230,11 +233,11 @@ def main():
     # 查询用户信息
     msg_user = obj.userInformation()
 
-    msg = f"【爱奇艺等级】\n{msg_user}\n-----------------------------\n【爱奇艺签到】\n签到：{msg1}\n任务：{msg3}\n抽奖：{msg2}"
+    msg = f"【爱奇艺等级】\n{msg_user}\n----------------------\n【爱奇艺签到】\n签到：{msg1}\n任务：{msg3}\n抽奖：{msg2}"
     sendMsg(skey, msg)
     return msg
 
 
-# 入口 
+# 入口
 if __name__ == "__main__":
     main()
